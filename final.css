@@ -1,0 +1,65 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://previews.123rf.com/images/merydolla/merydolla1209/merydolla120900223/15091968-vintage-background-with-film-flame.jpg");
+}
+
+form {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputtext {
+    width: 300px;
+    height: 50px;
+    margin: 5px;
+}
+
+#inputsubmit {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+}
+
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+}
+
+div {
+    height: 250px;
+    width: 300px;
+    margin: 15px;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    word-break: break-word;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #540e33;
+    background-image: url("https://previews.123rf.com/images/stillfx/stillfx1708/stillfx170800141/84355923-camera-film-negative-film-frames-background.jpg");
+    background-size: 300px 250px;
+    transform: skew(3deg);
+    border-radius: 5%;
+}
+
+.rotate {
+    animation: disappear .2s 1;
+}
+
+@keyframes disappear {
+    0% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(.8) rotate(90deg); }
+    50% { transform: scale(.55) rotate(180deg); }
+    75% { transform: scale(.3) rotate(270deg); }
+    100% { transform: scale(.05) rotate(360deg); }
+}
